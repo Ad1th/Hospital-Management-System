@@ -1,0 +1,36 @@
+CREATE TABLE doctordetails (
+  DoctorNo INT,
+  Name VARCHAR(50),
+  `Dept 1` VARCHAR(20),
+  `Dept 2` VARCHAR(20),
+  `Dept 3` VARCHAR(20),
+  Address VARCHAR(150),
+  `Phone number1` VARCHAR(20),
+  `Phone number 2` VARCHAR(20),
+  Qualifications VARCHAR(100),
+  Gender VARCHAR(20),
+  Username VARCHAR(50),
+  Password VARCHAR(50)
+);
+
+INSERT INTO doctordetails (DoctorNo, Name, `Dept 1`, `Dept 2`, `Dept 3`, Address, `Phone number1`, `Phone number 2`, Qualifications, Gender, Username, Password)
+VALUES
+(1, 'Dr. John Smith', 'Cardiology', 'Internal Medicine', NULL, '123 Main Street, City', '1234567890', NULL, 'MD, PhD', 'Male', 'doc01', 'pass1'),
+(2, 'Dr. Sarah Johnson', 'Orthopedics', 'Sports Medicine', 'Physical Therapy', '456 Elm Avenue, Town', '9876543210', '9871234560', 'MD, DPT', 'Female', 'doc02', 'pass2'),
+(3, 'Dr. Robert Davis', 'Neurology', NULL, NULL, '789 Oak Road, Village', '5553332222', NULL, 'MD', 'Male', 'doc03', 'pass3'),
+(5, 'Dr. Michael Brown', 'Dermatology', NULL, NULL, '101 Cedar Street, Hamlet', '7776665555', NULL, 'MD, PhD, FAAD', 'Male', 'doc05', 'pass5'),
+(4, 'Dr. Emily Wilson', 'Obstetrics', 'Gynecology', NULL, '567 Pine Lane, County', '9998887777', NULL, 'MD', 'Female', 'doc04', 'pass4');
+
+
+ create table patientdetails(patientid int primary key,
+ name varchar(50),
+ DOB date,
+ Age int,
+Gender varchar(20),
+ Address varchar(150),
+Phonenumber varchar(20),
+ Bloodgroup varchar(5) default "Nil",
+username varchar(50),
+password varchar(50));
+
+
